@@ -1,0 +1,107 @@
+/* Example CSS for Product Management Table */
+@import "color";
+.manage_container {
+  margin-top: 20px;
+  overflow-x: auto;
+  .search_baar {
+    background-color: $ten;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 7px;
+    margin-top: 0;
+    .bar {
+      display: flex;
+      gap: 1rem;
+      input {
+        width: 95%;
+        padding: 10px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+      }
+      img {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $nine;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid $nine;
+
+  img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    // object-fit: cover;
+  }
+  .removeProduct {
+    font-size: 20px;
+  }
+
+
+  svg {
+    font-size: 1rem;
+  }
+}
+
+th {
+  background-color: #222;
+  color: $first;
+  text-align: left;
+}
+
+.adminContainer {
+  display: flex;
+}
+
+.adminContainer main {
+  flex: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+    img {
+      max-width: 80px; /* Decrease image size on smaller screens */
+    }
+    .orderOption {
+      width: 25vh;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+    img {
+      max-width: 60px;
+    }
+  }
+}

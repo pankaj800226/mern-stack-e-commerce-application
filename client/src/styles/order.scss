@@ -1,0 +1,113 @@
+@import "color";
+
+.order_container {
+  width: 100%;
+  padding: 10px;
+}
+
+.order_item {
+  background-color: $nine;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order_header {
+  border-bottom: 1px solid $ten;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background-color: $four;
+  padding-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  select{
+    padding: 10px;
+    width: 20%;
+    border: 1.2px solid black;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+  }
+}
+
+.order_header h3 {
+  color: $first;
+  margin: 0;
+  font-size: 18px;
+}
+
+.order_header p {
+  margin: 0;
+  color: $first;
+
+}
+
+.order_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order_left,
+.order_right {
+  width: 48%;
+  strong {
+    color: black;
+    font-size: 16px;
+  }
+}
+
+.order_left h3,
+.order_right h3 {
+  margin-top: 0;
+  color: Green;
+  text-transform: uppercase;
+}
+
+.order_product_item {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.order_item_image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  mix-blend-mode: darken;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.order_item_details p {
+  margin: 5px 0;
+}
+
+@media (max-width: 1100px) {
+  .order_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order_header{
+    select{
+      width: 70%;
+    }
+  }
+
+  .order_left,
+  .order_right {
+    width: 100%;
+  }
+
+  .order_product_item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order_item_image {
+    margin-bottom: 10px;
+  }
+}

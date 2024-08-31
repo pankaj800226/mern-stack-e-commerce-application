@@ -1,0 +1,87 @@
+@import "color";
+.contact_container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  top: 10vh;
+  border: 1px solid $nine;
+  border-radius: 8px;
+  background-color: $thirteen;
+  box-shadow: 0 0 10px rgba(189, 188, 188, 0.1);
+}
+
+.contact_container h2 {
+  text-align: center;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: $first;
+    cursor: pointer;
+  }
+}
+
+.form-group input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid $nine;
+  border-radius: 5px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: $second;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: $second;
+}
+
+.form-group span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: $first;
+}
+
+.form-group span a {
+  color: $second;
+  text-decoration: none;
+}
+
+.form-group span a:hover {
+  text-decoration: underline;
+}
+
+.google_login {
+  background-color: $ten;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_container {
+    max-width: 90%; /* Adjusts the maximum width of the container for smaller screens */
+  }
+}

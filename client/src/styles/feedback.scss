@@ -1,0 +1,57 @@
+@import "color";
+.feedback_container {
+  margin: 10px;
+  height: 50vh;
+  div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    select {
+      padding: 13px;
+      font-size: 17px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:focus {
+        border: 1.5px solid #3834a2;
+      }
+    }
+    textarea {
+      height: 30vh;
+      outline: 0;
+      border: 0;
+      border: 1.4px solid $four;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 17px;
+      &:focus {
+        border: 1.5px solid $fourteen;
+      }
+    }
+
+    button {
+      padding: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      outline: 0;
+      border: 0;
+      background-color: $fourteen;
+      color: $first;
+      &:hover {
+        background-color: #3834a2e3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .feedback_container {
+    width: 100%;
+    margin: 0;
+    div {
+      margin: auto;
+      width: 90%;
+    }
+  }
+}
